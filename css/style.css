@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+main{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.contactForm{
+	/* display: flex; */
+}
+
+.formElement{
+	width: 100%;
+	height: 20px;
+	border: 2px solid black;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+textarea{
+	width: 25vw;
+}
+
+hr{
+	border-width: 2px;
+}
+
+h3{
+	padding-top: 15px;
+}

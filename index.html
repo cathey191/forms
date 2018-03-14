@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Forms Practice</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Form Elements</h1>
+			<form class="contactForm" action="success.html" method="post" enctype="multipart/form-data">
+				<label for="firstName">First Name</label>
+				<input type="text" class="formElement" placeholder="Please type your first name" name="firstName" autofocus/>
+				<br />
+				<label for="middleName">Middle Name</label>
+				<input type="text" class="formElement" placeholder="Please type your middle name" name="middleName" disabled/>
+				<br />
+				<label for="surnameName">Surname Name</label>
+				<input type="text" class="formElement" placeholder="Please type your surname name" name="surnameName" required/>
+				<br />
+				<label for="age">Age</label>
+				<input type="number" name="age" min="0" max="20" step="0.5" />
+				<br />
+				<label for="password">Password</label>
+				<input type="password" name="password" />
+				<br />
+				<label for="file">Attach File(s)</label>
+				<input type="file" name="file" multiple/>
+				<br />
+				<label for="reset">Reset</label>
+				<input type="reset" name="reset" />
+				<br />
+				<label for="">Radio</label><br />
+				<input type="radio" name="gender" /><label for="female">Female</label><br />
+				<input type="radio" name="gender" /><label for="male">Male</label><br />
+				<input type="radio" name="gender" checked/><label for="other">Other</label><br />
+				<br />
+				<label for="">Fruit</label><br />
+				<input type="checkbox" name="fruit[]" /><label for="apple">Apple</label><br />
+				<input type="checkbox" name="fruit[]" /><label for="banana">Banana</label><br />
+				<input type="checkbox" name="fruit[]" checked/><label for="pears">Pears</label><br />
+				<br />
+				<label for="largeText"></label>
+				<textarea name="largeText" rows="8" cols="2" placeholder="Type here ...."></textarea>
+				<br />
+				<select class="" name="options">
+					<option value="">Please choose an option</option>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+				<br />
+				<input type="submit" value="Submit Form" />
+				<br />
+				<hr />
+				<h3>Not fully supported across all browsers</h3>
+				<br />
+				<label for="color">Color</label>
+				<input type="color" />
+				<br />
+				<label for="">Date</label>
+				<input type="date" />
+				<br />
+				<label for="">Time</label>
+				<input type="time" />
+				<br />
+				<label for="">Date Time</label>
+				<input type="datetime" />
+				<br />
+				<label for="">Date Time-local</label>
+				<input type="datetime-local" />
+				<br />
+				<label for="">Month</label>
+				<input type="month" />
+				<br />
+				<label for="">Time</label>
+				<input type="time" />
+				<br />
+				<label for="">Week</label>
+				<input type="week" />
+				<br />
+				<input type="url" />
+				<br />
+				<label for="tel">Phone</label>
+				<input type="tel" name="tel"/>
+				<br />
+				<label for="email">Email</label>
+				<input type="email" name="email"/>
+				<br />
+				<label for="">Range</label>
+				<input type="range" min="0" max="100"/>
+				<br />
+				<button type="submit" name="button">Button</button>
+			</form>
+
+		</main>
+	</body>
+</html>
